@@ -1,0 +1,128 @@
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  overflow-x: hidden;
+  margin: 0;
+	background-color: var(--Nav-color);
+}
+
+:root {
+  --Nav-color: #181818;
+  --OnOffIcon-color: white;
+  --wB-color: white;
+  --Gw-color: gray;
+  color: white;
+}
+.dark-mode {
+  /* white mode */
+  --Nav-color: white;
+  --OnOffIcon-color: black;
+  --wB-color: black;
+  --Gw-color: white;
+  color: black;
+}
+
+/* NAVBAR */
+.navb {
+  background-color: var(--Nav-color);
+  font-size: 55px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 100%;
+  text-align: center;
+}
+#first {
+  float: right;
+  margin-right: 15px;
+  width: 48px;
+  height: 48px;
+}
+#second {
+  padding: 20px;
+}
+#third {
+  float: left;
+  margin-left: 15px;
+}
+#dB {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--OnOffIcon-color);
+}
+/*  */
+
+/* Sidenav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--Nav-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--wB-color);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: var(--wB-color);
+  background-color: grey;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/*  */
+
+/* Footer */
+.footer--site {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--Nav-color);
+}
+
+.border-top {
+  border-top: 1px solid #e3e8e9;
+}
+.padding-bottom-medium {
+  padding-bottom: 0.9375rem;
+}
+.padding-top-medium {
+  padding-top: 0.9375rem;
+}
+#Ftext {
+  margin-left: 10px;
+}
+#linkNoColor {
+  text-decoration: none;
+}
+#linkNoColor:link,
+#linkNoColor:visited {
+  color: var(--wB-color);
+}
+
+/*  */
